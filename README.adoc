@@ -104,6 +104,9 @@ Quels fichiers et répertoires ont été générés par cette commande ?
 +
 ....
 🡆 Répondre ici 🡄
+.gitignore
+Cargo.toml (manifeste du projet contenant la version, l'auteur, les dependances, etc...)
+src/main.rs 
 ....
 .. Déplacez `devine_mon_nombre.rs` vers `src/main.rs` en utilisant https://git-scm.com/docs/git-mv[`git mv`].
 .. Exécutez votre programme avec https://doc.rust-lang.org/cargo/commands/cargo-run.html[`cargo run`].
@@ -111,6 +114,8 @@ Qu'est-ce qui a été généré dans le répertoire ?
 +
 ....
 🡆 Répondre ici 🡄
+Cargo.lock
+target/
 ....
 . Ajoutez la bibliothèque externe https://crates.io/crates/rand[`rand`] dans le projet
 +
@@ -124,6 +129,7 @@ Que se passe-t'il lors du _build_ ?
 +
 ....
 🡆 Répondre ici 🡄
+Lors du build, Cargo compile le code du projet et toutes ses dépendances déclarées dans le Cargo.toml
 ....
 . Générez un nombre aléatoire avec https://docs.rs/rand/0.8.4/rand/trait.Rng.html#method.gen_range[rand::Rng::gen_range]
 .. Conservez le résultat de l'appel de `rand::thread_rng().gen_range(1..101)` dans une variable et construisez le projet. Lisez attentivement l'erreur obtenue.
