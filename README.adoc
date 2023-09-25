@@ -79,11 +79,13 @@ NOTE: Inspirez-vous de l'exemple fourni dans la https://doc.rust-lang.org/std/io
 +
 ....
 🡆 Répondre ici 🡄
+Cela permet de passer à la fonction une réference mutable de la variable buffer, ce qui permet à cette fonction de modifier le contenu de la variable.
 ....
 .. Quel est le type de retour de `read_line` ? Quel est son utilité ?
 +
 ....
 🡆 Répondre ici 🡄
+Le type de retour de cette fonction est std::io::Result<usize>
 ....
 .. Utilisez la méthode https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap[`unwrap`] pour désencapsuler la chaîne saisie.
 .. Affichez le nombre saisi à l'écran.
